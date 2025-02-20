@@ -1,0 +1,497 @@
+@media screen and (min-width: 996px) {
+    header{ 
+        padding: 20px 0px;
+        position: relative;
+    }
+ .header { 
+    &-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-city, &-phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        img {    
+         padding-right: 15px;
+        }
+    }
+  
+    &-city {
+        padding: 17px 65px;
+        border: 2px solid #6D6D6D;
+        border-radius: 63px;  
+        font-size: 20px;
+    } 
+    &-phone {
+        font-size: 18px;
+    }
+ }   
+ .logo img{
+    display: block;
+    width: 341px;
+    height: 135px;
+    position: relative;
+    right: 50px;
+}
+    .firstsection {
+        height: 1260px;
+        background-image: url('src/img/bgf.png');
+        background-repeat: no-repeat;
+        background-position: center top; 
+        background-size: cover;
+        position: relative;
+        &::before {
+            content: "";
+            width: 30%;
+            height: 424px;
+            background: url('../img/shetka.png') no-repeat bottom;
+            background-size: contain;
+            position: absolute;
+            bottom: 0px;
+            left: -5%;
+        }
+        &-tittle {
+            font-size: 170px; 
+            position: relative;
+            bottom: 110px;
+        }
+        &-subtittle {
+            font-size: 18px;
+            position: relative;
+            bottom: 110px;
+        }
+        &-buttonblock {
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            background: rgba(233,233,233,0.5);
+            border-radius: 85px;  
+            max-width: fit-content;
+        }
+        &-discount {
+            display: block;
+            box-sizing: content-box;
+            padding-left: 20px;
+            padding-right: 80px; 
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 16px;
+            span:nth-child(1) { 
+              font-size: 30px;
+            }
+        }
+    }
+    h1 {
+        font-size: 85px;
+        padding-top: 112px;
+    }
+    button, .button {
+        padding: 20px 90px;
+        border-radius: 85px;
+        font-size: 28px;
+    }
+
+    .section-head {
+        font-size: 93px;
+    }
+    .studioinfo {
+        position: relative;
+        &-text {
+            margin-top: 34px;
+        }
+        &-title {
+            font-size: 24px;
+            display: block;
+            padding-top: 37px;
+
+        }
+
+        &-bottom {
+            margin-top: 60px;
+        }
+ 
+    }
+    .advantages {
+        background: url('../img/advantages.png') no-repeat right;
+        background-size: cover;
+        padding-top: 135px;
+        padding-bottom: 80px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 25%;
+            height: 800px;
+            background: url('../img/advantages-right.png') no-repeat center;
+            position: absolute;
+            right: 0px;
+            top: -300px;
+        }
+        &-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 160px;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center; 
+        }
+        &-tittle {
+            display: block;
+            font-size: 17px;
+            padding-top: 15px;
+        }
+    }
+    .appointment {
+        padding: 200px 0px;
+        background-image: url('../img/appointment.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 100% 100%;
+        height: 570px;
+        position: relative;
+        z-index: 1;
+        &-list {
+            justify-content: space-between;
+        }
+        &-head {
+            font-size: 64px;
+        }
+        &-title {
+            font-size: 181px;
+            position: relative;
+            bottom: 145px;
+        }
+        &-cutters {
+            max-width: 35%;
+            position: absolute;
+            left: 0px;
+            top: -130px;
+        }
+        &-pilka {
+            position: absolute;
+            right: 0px;
+            top: -160px;
+            z-index: -1;
+        }
+        &-right {
+            min-width: 400px;
+            max-width: 475px; 
+        }
+        &-discount {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &-buttonblock {
+            max-width: 100%;
+            div {
+                width: 100%;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    }
+ 
+ .slider-absolute{ 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    z-index: -1;
+
+ }
+ 
+ .map {
+    padding-top: 180px; 
+    background: url('../img/map-bg.png') no-repeat center;
+    background-size: cover;
+    &-title {
+        font-size: 181px;
+        position: relative;
+        bottom: 150px;
+        right: -35%;
+    }
+    &-image {
+        height: 630px;
+        background: url('../img/map.svg') no-repeat center;
+        background-size: cover;
+        position: relative;
+        bottom: 200px;
+        border-radius: 20px;
+    }
+    &-infoblock {
+        width: 70%;
+        padding: 38px 65px;
+        border-top-left-radius: 50px;
+        
+        border-top-right-radius: 50px; 
+        position: absolute; 
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px; 
+        align-items: center;
+    } 
+    address span {
+        font-size: 16px;;
+    }
+ }
+ footer {
+    padding-top: 115px; 
+    padding-bottom: 105px; 
+    position: relative;
+    font-size: 20px;
+    &::before{ 
+        width: 50%;
+        content: "";
+        height: 1px;
+        background: $redColor;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+   address {
+    margin: 25px 0px;
+   }
+ }
+ .footer {
+    &-list {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    &-link {
+        margin-bottom: 15px;
+    }
+    &-polytic { 
+        font-size: 15px; 
+    }
+}
+.menu {
+    font-size: 20px;  
+    right: 0px;  
+    width: 100%; 
+    top: -10px;
+    height: 100%;
+    text-align: right; 
+    position: absolute;
+
+&::before {
+
+    content: "";
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+}
+}
+.menu-links {
+    margin-top: 70px;
+    position: relative;
+    z-index: 100;
+}
+.menu-links li {
+    margin-bottom: 15px;
+}
+.menu-worktime {
+    display: block;
+    font-size: 16px;
+    margin-top: 180px;
+    position: relative;
+    z-index: 1000;
+}
+
+
+    .portfolio {
+       padding-top: 53px; 
+    }
+
+    .nav-tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: sticky;
+        z-index: 1;
+    }
+    .nav-button { 
+        width: 303px;
+        padding: 13px 53px;
+        font-size: 26px;
+        border-radius: 63px;; 
+    }
+    .carousel {
+      
+        &-inner {
+            max-width: min-content;
+        }
+        &-item {
+            width: 800px;
+        }
+     
+    }
+    .portfolio {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Расстояние между картинками */
+
+        }
+        &-item {
+            max-width: 400px;
+            width: calc(33.33% - 20px); /* Для 3-х колонок в ряду, минус gap */
+            position: relative;
+            max-height: 420px;  
+
+          
+           
+            img {
+                display: block;
+                max-width: 100%;
+            }
+            &:nth-child(3n + 2)  {
+                margin-top: 20px;
+            }
+            &:nth-child(3n + 3){
+                margin-top: 40px; /* Только нечетным элементам добавляем отступ */
+            }
+    
+        }  
+            &-refresh { 
+                margin-top: 120px;
+                margin-bottom: 140px;
+                font-size: 20px;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 30px;
+                padding-bottom: 30px; 
+            } 
+    }
+ 
+
+}
+@media screen and (min-width: 1400px) {
+    .carousel {
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .studioinfo {
+      
+        &-slider {
+           
+            max-width: 40%;
+            max-height: 827px;
+            img { 
+            max-height: 650px;
+            right: 0px;
+            }
+        }
+    }
+    .appointment {
+  
+        &-cutters {
+             max-width: 100%;
+            position: absolute;
+            left: 0px;
+            top: -130px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1300px !important;
+    }
+    .studioinfo {
+        &-title {
+            font-size: 26px;
+        }
+        &-text {
+            font-size: 26px;
+        }
+    }
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .carousel {
+        max-width: 650px;
+     }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1800px) {
+    .carousel {
+        max-width: 700px;
+     }
+}
+
+@media screen and (min-width: 1800px) {
+    .carousel {
+        max-width: 900px;
+     }
+}
+
+@media screen and (min-width: 996px) and (max-width: 1200px) {
+    .header {
+        &-city {
+            font-size: 16px;
+            padding: 12px 50px;
+        }
+    }
+    .logo {
+        max-width: 230px;
+    }
+    .section-head {
+        font-size: 85px;
+    }
+    .studioinfo {
+        &-title {
+            font-size: 18px;
+        }
+        &-text {
+            font-size: 18px;
+        }
+        &-bottom {
+            img {
+                width: 223px;
+
+            }
+        }
+    }
+    .carousel {
+        max-width: 540px;
+    }
+    .slider {
+        &-buttons { 
+            button {
+                width: 50px !important;
+                height: 50px !important;
+            }
+            svg {
+                
+            width: 50px;
+            height: 50px;
+            }
+        }
+    }
+}
+
+ 
